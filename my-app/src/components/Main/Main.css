@@ -1,0 +1,13 @@
+.fon{
+  background: #839695;
+}
+.card-block{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 35px;
+  grid-row-gap: 80px;
+  padding: 40px 55px;
+}
+img{
+    width: 100%;
+  }
