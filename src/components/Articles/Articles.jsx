@@ -4,7 +4,7 @@ import { Container, Image } from 'react-bootstrap';
 import Comment from './Comment';
 
 function Articles(props) {
-  const { imageUrl, title, description, expertComment } = props.data
+  const { imageUrl, title, description, expertComment } = props.data;
   return (
     <div className="fon">
       <Container fluid>
