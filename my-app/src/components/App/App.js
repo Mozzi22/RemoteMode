@@ -1,13 +1,12 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import  Articles  from '../Articles';
 import  Main  from '../Main';
 import  Header  from '../Header';
 import { BrowserRouter as Router, Redirect, Route, Switch } from 'react-router-dom';
 import firebase from 'firebase';
-import { validateCreatingCard } from '../../firebase/validation';
 
-function App() {
+function App() { 
     const [fireCollection, setFireCollection] = useState([]);
 
     React.useEffect(() => {
@@ -20,20 +19,6 @@ function App() {
         };
         fetchData();
       }, []);
-    
-//   const getData = async () => {
-//     const db = firebase.firestore();
-//     const collections = await db.collection('reactdeved').get();
-//     const beforeValidate = collections.docs.map(el => el.data());
-//     setFireCollection(validateCreatingCard(beforeValidate));
-//   };
-//   useEffect(() => {
-//     getData();
-//   }, []);
-  
-//   useEffect(() => {
-//     getData();
-//   }, []);
 
   const article = fireCollection.map((el) => {
     return (
