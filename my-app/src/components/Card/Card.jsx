@@ -1,21 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
+import { Card } from 'react-bootstrap';
 import './Card.css';
 
-function Card(props) {
+function CardItem(props) {
+  const { id, imageUrl, title } = props.data;
   return (
-    <div className="card">
-    <div className="mycard">
-    <NavLink to={`/article/${props.id}`}>
-    <div className="card">
-      <img src={props.src} alt="" className="img"/>
-      <div className="title">{props.title} </div>
-      <div className="link"> {props.linkText} </div>
-    </div>
-    </NavLink>
-    </div>
-    </div>
+    <Card >
+    <Card.Body className="mycard">
+      <NavLink to={`/article/${id}`}>
+        <Card.Img src={imageUrl} variant="top" />
+        <Card.Text className="title">{title}</Card.Text>
+      </NavLink>
+    </Card.Body>
+  </Card>
   );
 }
 
-export default Card;
+export default CardItem;

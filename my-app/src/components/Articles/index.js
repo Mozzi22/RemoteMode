@@ -1,3 +1,3 @@
-import Articles from './Articles';
+import Articles from './Articles.jsx';
 
 export default Articles;

@@ -7,16 +7,21 @@
   text-align: start;
 }
 .title{
-    font-size: 36px;
-    color: #fff;
-  }
+  font-size: 36px;
+  color: #fff;
+}
 .title__img{
-    width: 100%;
-    max-height: 450px;
-    margin-top: 10px;
+  width: 100%;
+  max-height: 450px;
+  margin-top: 10px;
 }
 .title__description{
-    font-weight: 500;
-    font-size: 17px;
-    padding: 30px 0;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 30px 0;
   }
+.comment{
+  background: whitesmoke;
+  text-align: left;
+  padding: 10px;
+}
